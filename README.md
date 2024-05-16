@@ -51,24 +51,24 @@ Jellyfin-Purple:
 <div class="imagesCont">
   <div class="Login">
     <h3 align="center">Login</h3>
-    <img src="https://donchillow.github.io//JellyFlix@latest/img/Login.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Login.jpg">
   </div>
   <div class="home">
     <h3 align="center">Home Page</h3>
-    <img src="https://donchillow.github.io//JellyFlix@latest/img/Home.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Home.jpg">
   </div>  
   <div class="lib">
     <h3 align="center">Library</h3>
-    <img src="https://donchillow.github.io//JellyFlix@latest/img/Movies.jpg">
-    <img src="https://donchillow.github.io//JellyFlix@latest/img/TV%20Shows.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Movies.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/TV%20Shows.jpg">
   </div>
   <div class="titleMov">
     <h3 align="center">Movie Title Page</h3>
-    <img src="https://donchillow.github.io//JellyFlix@latest/img/Title%20Page-Movie.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Title%20Page-Movie.jpg">
   </div>
   <div class="titleTv">
     <h3 align="center">TV Show Title page</h3>
-    <img src="https://donchillow.github.io//JellyFlix@latest/img/Title%20Page-TV.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Title%20Page-TV.jpg">
   </div>
 </div>
 <br>
