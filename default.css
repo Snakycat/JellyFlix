@@ -323,18 +323,7 @@ div#itemDetailPage {
 .layout-tv div#itemBackdrop {
   width: 100vw;
   height: 100vh !important;
-  background: linear-gradient(
-      to left,
-      transparent,
-      rgb(20 20 20 / 0.5),
-      rgb(20, 20, 20)
-    ),
-    linear-gradient(
-      to bottom,
-      transparent,
-      rgb(20 20 20 / 0.5),
-      rgb(20, 20, 20)
-    );
+  background: linear-gradient(to right, rgb(20,20,20) 30%, rgba(20, 20, 20, 0.8) 50%, rgba(20,20,20,0) 100%), linear-gradient(to top, rgb(20, 20, 20) , rgba(20,20,20,0));
   z-index: -1;
   mask-image: none !important;
   -webkit-mask-image: none !important;
