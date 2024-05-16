@@ -242,9 +242,9 @@ div#itemDetailPage {
   font-size: 6.5vw;
 }
 
-#itemDetailPage .detailVerticalSection:last-child {
-  margin-bottom: 10vh;
-}
+/*#itemDetailPage .detailVerticalSection:last-child {*/
+/*  margin-bottom: 10vh;*/
+/*}*/
 
 #itemDetailPage .itemExternalLinks {
   margin-top: 0 !important;
@@ -2320,6 +2320,7 @@ body:not(.withSectionTabs) > .skinHeader {
 .listItem[data-type=Audio] {
   transform: none !important;
   grid-column: span 5;
+  margin-right: 1vw;
 }
 
 .listItem[data-type="Audio"] .mediaInfoItem::after {
@@ -2717,4 +2718,16 @@ div:not(.paperList) .listItem {
 /* Fix Season Details Padding */
 [dir=ltr] .detailPageContent {
   padding-left: 0px;
+}
+
+.mainDetailButtons {
+  margin: 1em 0em 1em 1em;
+}
+
+#similarCollapsible {
+  margin-bottom: 0;
+}
+
+.listItemMediaInfo {
+  margin-right: 1vw;
 }
