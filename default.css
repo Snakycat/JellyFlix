@@ -1213,6 +1213,46 @@ label.selectLabel {
   display: none !important;
 }
 
+.layout-tv .card[data-type="Director"] {
+  padding: 10px;
+  position: relative;
+  height: 16em;
+}
+
+.layout-tv .card[data-type="Director"] .cardPadder {
+  display: none !important;
+}
+
+.layout-tv .card[data-type="GuestStar"] {
+  padding: 10px;
+  position: relative;
+  height: 16em;
+}
+
+.layout-tv .card[data-type="GuestStar"] .cardPadder {
+  display: none !important;
+}
+
+.layout-tv .card[data-type="Producer"] {
+  padding: 10px;
+  position: relative;
+  height: 16em;
+}
+
+.layout-tv .card[data-type="Producer"] .cardPadder {
+  display: none !important;
+}
+
+.layout-tv .card[data-type="Writer"] {
+  padding: 10px;
+  position: relative;
+  height: 16em;
+}
+
+.layout-tv .card[data-type="Writer"] .cardPadder {
+  display: none !important;
+}
+
 .layout-tv .emby-scroller {
   overflow: hidden !important;
 }
@@ -1366,6 +1406,131 @@ label.selectLabel {
 .layout-tv .card[data-type="Actor"] .cardBox {
   padding: 0 !important;
 }
+
+
+.layout-tv .card[data-type="Director"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+  width: calc(100% - 10px);
+  padding: 0 5px !important;
+}
+
+.layout-tv .card[data-type="Director"] .cardText-first {
+  bottom: 31.5px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Director"] .cardText-secondary {
+  bottom: 8px;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Director"] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: inherit;
+  padding-top: 0 !important;
+}
+
+.layout-tv .card[data-type="Director"] .cardBox {
+  padding: 0 !important;
+}
+
+
+.layout-tv .card[data-type="GuestStar"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+  width: calc(100% - 10px);
+  padding: 0 5px !important;
+}
+
+.layout-tv .card[data-type="GuestStar"] .cardText-first {
+  bottom: 31.5px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="GuestStar"] .cardText-secondary {
+  bottom: 8px;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="GuestStar"] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: inherit;
+  padding-top: 0 !important;
+}
+
+.layout-tv .card[data-type="GuestStar"] .cardBox {
+  padding: 0 !important;
+}
+
+
+.layout-tv .card[data-type="Producer"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+  width: calc(100% - 10px);
+  padding: 0 5px !important;
+}
+
+.layout-tv .card[data-type="Producer"] .cardText-first {
+  bottom: 31.5px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Producer"] .cardText-secondary {
+  bottom: 8px;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Producer"] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: inherit;
+  padding-top: 0 !important;
+}
+
+.layout-tv .card[data-type="Producer"] .cardBox {
+  padding: 0 !important;
+}
+
+
+.layout-tv .card[data-type="Witer"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+  width: calc(100% - 10px);
+  padding: 0 5px !important;
+}
+
+.layout-tv .card[data-type="Witer"] .cardText-first {
+  bottom: 31.5px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Witer"] .cardText-secondary {
+  bottom: 8px;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Witer"] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: inherit;
+  padding-top: 0 !important;
+}
+
+.layout-tv .card[data-type="Witer"] .cardBox {
+  padding: 0 !important;
+}
+
 
 .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
   padding: 0 !important;
@@ -1570,6 +1735,12 @@ div#divRunningTasks {
   transform: none !important;
 }
 
+.cardDefaultText {
+  opacity: 1 !important;
+}
+
+/* Actor Card */
+
 .card[data-type="Actor"] {
   transform: none !important;
 }
@@ -1614,14 +1785,6 @@ div#divRunningTasks {
   height: 22px;
 }
 
-.cardDefaultText {
-  opacity: 1 !important;
-}
-
-.layout-mobile .card[data-type="Actor"] .cardText-first {
-  color: white !important;
-}
-
 .card[data-type="Actor"] .cardOverlayButton-br {
   position: absolute;
   bottom: 23% !important;
@@ -1637,6 +1800,241 @@ div#divRunningTasks {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.layout-mobile .card[data-type="Actor"] .cardText-first {
+  color: white !important;
+}
+
+/* Director Card */
+
+.card[data-type="Director"] {
+  transform: none !important;
+  /* grid-row-start: 1; */
+}
+.card[data-type="Director"] .cardBox {
+  background: none;
+  position: relative;
+}
+.card[data-type="Director"] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: var(--rounding);
+}
+.card[data-type="Director"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+}
+.card[data-type="Director"] .cardImageContainer::after {
+  content: "";
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.75), transparent 70%);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-top: 100%;
+}
+.card[data-type="Director"] .cardText-secondary {
+  bottom: 0%;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+.card[data-type="Director"] .cardText-first {
+  bottom: 23.5px;
+  width: -webkit-fill-available;
+  height: 22px;
+}
+.card[data-type="Director"] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23% !important;
+  right: 0 !important;
+}
+.card[data-type="Director"] .cardPadder {
+  background: none;
+}
+.card[data-type="Director"] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.layout-mobile .card[data-type="Director"] .cardText-first {
+  color: white !important;
+}
+
+/* GuestStar Card */
+
+.card[data-type="GuestStar"] {
+  transform: none !important;
+}
+.card[data-type="GuestStar"] .cardBox {
+  background: none;
+  position: relative;
+}
+.card[data-type="GuestStar"] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: var(--rounding);
+}
+.card[data-type="GuestStar"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+}
+.card[data-type="GuestStar"] .cardImageContainer::after {
+  content: "";
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.75), transparent 70%);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-top: 100%;
+}
+.card[data-type="GuestStar"] .cardText-secondary {
+  bottom: 0%;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+.card[data-type="GuestStar"] .cardText-first {
+  bottom: 23.5px;
+  width: -webkit-fill-available;
+  height: 22px;
+}
+.card[data-type="GuestStar"] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23% !important;
+  right: 0 !important;
+}
+.card[data-type="GuestStar"] .cardPadder {
+  background: none;
+}
+.card[data-type="GuestStar"] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.layout-mobile .card[data-type="GuestStar"] .cardText-first {
+  color: white !important;
+}
+
+/* Producer Card */
+
+.card[data-type="Producer"] {
+  transform: none !important;
+  /* grid-row-start: 1; */
+}
+.card[data-type="Producer"] .cardBox {
+  background: none;
+  position: relative;
+}
+.card[data-type="Producer"] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: var(--rounding);
+}
+.card[data-type="Producer"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+}
+.card[data-type="Producer"] .cardImageContainer::after {
+  content: "";
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.75), transparent 70%);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-top: 100%;
+}
+.card[data-type="Producer"] .cardText-secondary {
+  bottom: 0%;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+.card[data-type="Producer"] .cardText-first {
+  bottom: 23.5px;
+  width: -webkit-fill-available;
+  height: 22px;
+}
+.card[data-type="Producer"] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23% !important;
+  right: 0 !important;
+}
+.card[data-type="Producer"] .cardPadder {
+  background: none;
+}
+.card[data-type="Producer"] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.layout-mobile .card[data-type="Producer"] .cardText-first {
+  color: white !important;
+}
+
+/* Writer Card */
+
+.card[data-type="Writer"] {
+  transform: none !important;
+  /* grid-row-start: 1; */
+}
+.card[data-type="Writer"] .cardBox {
+  background: none;
+  position: relative;
+}
+.card[data-type="Writer"] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: var(--rounding);
+}
+.card[data-type="Writer"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+}
+.card[data-type="Writer"] .cardImageContainer::after {
+  content: "";
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.75), transparent 70%);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-top: 100%;
+}
+.card[data-type="Writer"] .cardText-secondary {
+  bottom: 0%;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+.card[data-type="Writer"] .cardText-first {
+  bottom: 23.5px;
+  width: -webkit-fill-available;
+  height: 22px;
+}
+.card[data-type="Writer"] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23% !important;
+  right: 0 !important;
+}
+.card[data-type="Writer"] .cardPadder {
+  background: none;
+}
+.card[data-type="Writer"] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.layout-mobile .card[data-type="Writer"] .cardText-first {
+  color: white !important;
 }
 
 select {
