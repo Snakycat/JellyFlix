@@ -1895,6 +1895,11 @@ body:not(.withSectionTabs) > .skinHeader {
 
 /*Episode cards*/
 
+.listItem[data-type=Audio] {
+  transform: none !important;
+  grid-column: span 5;
+}
+
 .listItem[data-type="Audio"] .mediaInfoItem::after {
   display: none !important;
 }
