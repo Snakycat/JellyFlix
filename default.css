@@ -2155,21 +2155,22 @@ h2 {
   /*display: none !important;*/
 }
 
+
 .backgroundContainer.withBackdrop {
   opacity: 1;
   z-index: -1;
-  background-color: rgba(20, 20, 20, 0.6);
+  background: linear-gradient(to right, rgb(20,20,20) 30%, rgba(20, 20, 20, 0.8) 50%, rgba(20,20,20,0.4) 100%);
 }
 
 .backgroundContainer {
-  background-color: rgba(20, 20, 20, 0.6);
-  backdrop-filter: blur(2px);
+  background: linear-gradient(to right, rgb(20,20,20) 30%, rgba(20, 20, 20, 0.8) 50%, rgba(20,20,20,0.4) 100%);
+  backdrop-filter: none;
 }
 
 #homeTab {
-  background-color: rgba(20, 20, 20, 0.3);
-  backdrop-filter: blur(7px);
+  background: rgb(20,20,20);
 }
+
 /*Rounded corners and square hover buttons*/
 
 .cardContent-button,
