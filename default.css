@@ -1672,7 +1672,14 @@ div#divRunningTasks {
 }
 
 .detailLogo {
-  display: none;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16vh;
+  position: absolute;
+  right: 3vw;
+  top: 30vh;
+  width: 25vw;
 }
 
 .layout-mobile .detailPageContent {
