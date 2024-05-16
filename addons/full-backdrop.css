@@ -13,3 +13,7 @@
     background: rgba(20, 20, 20, 0.3);
     backdrop-filter: blur(7px);
 }
+
+.skinHeader {
+    background: linear-gradient(to bottom, rgb(5, 5, 5), rgba(20, 20, 20, 0.9)) !important;
+}
