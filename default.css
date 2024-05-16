@@ -256,7 +256,6 @@ div#itemDetailPage {
 
 .itemName.parentNameLast {
   margin: 0;
-  font-size: calc(135% * 2);
 }
 
 .parentName a {
