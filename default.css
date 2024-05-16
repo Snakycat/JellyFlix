@@ -2256,7 +2256,7 @@ body:not(.withSectionTabs) > .skinHeader {
 .mainDrawer,
 .mainDrawer.drawer-open {
   box-shadow: none !important;
-  background: transparent;
+  background: rgb(20,20, 20);
 }
 
 .navMenuOption {
