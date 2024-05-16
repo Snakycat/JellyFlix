@@ -159,6 +159,7 @@ span.material-icons.checkboxIcon.checkboxIcon-checked.check {
   border-radius: 0;
   box-shadow: none;
   padding: 0 0 25px 25px;
+  margin-right: -4px !important;
 }
 
 .cardIndicators {
@@ -170,6 +171,7 @@ span.material-icons.checkboxIcon.checkboxIcon-checked.check {
 .fullSyncIndicator,
 .playedIndicator {
   background: linear-gradient(-135deg, rgba(40, 40, 40) 50%, transparent 50%);
+  margin-right: -4px !important;
 }
 
 button.emby-tab-button.emby-button.emby-tab-button-active:hover {
