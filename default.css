@@ -2311,7 +2311,6 @@ body:not(.withSectionTabs) > .skinHeader {
   padding-left: 5px;
 }
 
-
 #itemDetailPage .vertical-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -2323,6 +2322,11 @@ body:not(.withSectionTabs) > .skinHeader {
   -webkit-box-orient: horizontal;
   margin: -6px;
   width: 100%;
+}
+
+/* Fix for Multi-CD AUdio cause of display-grid of parent */
+#itemDetailPage .vertical-list > div:not(.listItem) {
+  grid-column: span 5;
 }
 
 #itemDetailPage .emby-select {
