@@ -1676,7 +1676,7 @@ div#divRunningTasks {
   background-size: contain;
   height: 16vh;
   position: absolute;
-  right: 3vw;
+  right: 4vw;
   top: 30vh;
   width: 25vw;
 }
@@ -1705,12 +1705,9 @@ div#divRunningTasks {
 .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
   position: relative;
   top: 0;
-  width: -webkit-fit-content !important;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
+  width: 100%;
   background: transparent;
   font-size: 20px;
-  max-width: 95%;
   margin-top: 10vh;
   padding: 0 !important;
   height: 20vh;
