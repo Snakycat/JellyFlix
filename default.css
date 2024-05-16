@@ -1903,6 +1903,7 @@ body:not(.withSectionTabs) > .skinHeader {
   padding-left: 5px;
 }
 
+
 #itemDetailPage .vertical-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -2276,8 +2277,13 @@ div:not(.paperList) .listItem {
 /* Spinner */
 
 .mdl-spinner__layer.mdl-spinner__layer-1.mdl-spinner__layer-1-active,
-.mdl-spinner__layer.mdl-spinner__layer-2.mdl-spinner__layer-2-active, 
-.mdl-spinner__layer.mdl-spinner__layer-3.mdl-spinner__layer-3-active, 
+.mdl-spinner__layer.mdl-spinner__layer-2.mdl-spinner__layer-2-active,
+.mdl-spinner__layer.mdl-spinner__layer-3.mdl-spinner__layer-3-active,
 .mdl-spinner__layer.mdl-spinner__layer-4.mdl-spinner__layer-4-active {
   border-color: var(--accent);
+}
+
+/* Fix Season Details Padding */
+[dir=ltr] .detailPageContent {
+  padding-left: 0px;
 }
