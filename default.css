@@ -2158,13 +2158,18 @@ h2 {
 .backgroundContainer.withBackdrop {
   opacity: 1;
   z-index: -1;
-  /*background-color: rgb(20, 20, 20);*/
+  background-color: rgba(20, 20, 20, 0.6);
 }
 
 .backgroundContainer {
-  /*background-color: rgb(20, 20, 20) !important;*/
+  background-color: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(2px);
 }
 
+#homeTab {
+  background-color: rgba(20, 20, 20, 0.3);
+  backdrop-filter: blur(7px);
+}
 /*Rounded corners and square hover buttons*/
 
 .cardContent-button,
