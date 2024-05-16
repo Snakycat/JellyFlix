@@ -2201,11 +2201,7 @@ h2 {
 /* Top menu transparency */
 
 .skinHeader {
-  background: linear-gradient(
-    to bottom,
-    rgb(5, 5, 5),
-    rgb(20, 20, 20)
-  ) !important;
+  background: linear-gradient(to bottom, rgb(5, 5, 5), rgba(20, 20, 20, 0.9)) !important;
 }
 
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent {
