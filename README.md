@@ -12,31 +12,25 @@
 
 <h3>Base Version:</h3>
 <h3>Auto Update: </h3>
-@import url("https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@main/cards.css")
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/default.css");
+@import url("https://donchillow.github.io/JellyFlix/default.css");
 ```
 
-<h3>Custom  Version:</h3>
+<h3>Addons:</h3>
+- Just add the imports you like after the default.css
+- If you add multiple addons, add them in the order they are in this readme
+
+- <h4>Backdrop Version:</h3>
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@<version-number>/default.css");
+@import url("https://donchillow.github.io/JellyFlix/addons/full-backdrop.css");
 ```
 
-<h3>As Cards:</h3>
-<h3>Auto Update:</h3>
+- <h4>Card Version:</h3>
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/default.css");
-@import url("https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/cards.css");
-```
-
-<h3>Custom Version:</h3>
-
-```css
-@import url("https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@<version-number>/default.css");
-@import url("https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@<version-number>/cards.css");
+@import url("https://donchillow.github.io/JellyFlix/addons/cards.css");
 ```
 
 <br>
@@ -44,12 +38,12 @@
 Jellyfin-Blue:
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@9.0.4/addons/jf-blue.css");
+@import url("https://donchillow.github.io/JellyFlix/addons/jf-blue.css");
 ```
 Jellyfin-Purple:
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@9.0.4/addons/jf-purple.css");
+@import url("https://donchillow.github.io/JellyFlix/addons/jf-purple.css");
 ```
 
 
@@ -57,24 +51,24 @@ Jellyfin-Purple:
 <div class="imagesCont">
   <div class="Login">
     <h3 align="center">Login</h3>
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Login.jpg">
+    <img src="https://donchillow.github.io//JellyFlix@latest/img/Login.jpg">
   </div>
   <div class="home">
     <h3 align="center">Home Page</h3>
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Home.jpg">
+    <img src="https://donchillow.github.io//JellyFlix@latest/img/Home.jpg">
   </div>  
   <div class="lib">
     <h3 align="center">Library</h3>
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Movies.jpg">
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/TV%20Shows.jpg">
+    <img src="https://donchillow.github.io//JellyFlix@latest/img/Movies.jpg">
+    <img src="https://donchillow.github.io//JellyFlix@latest/img/TV%20Shows.jpg">
   </div>
   <div class="titleMov">
     <h3 align="center">Movie Title Page</h3>
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Title%20Page-Movie.jpg">
+    <img src="https://donchillow.github.io//JellyFlix@latest/img/Title%20Page-Movie.jpg">
   </div>
   <div class="titleTv">
     <h3 align="center">TV Show Title page</h3>
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Title%20Page-TV.jpg">
+    <img src="https://donchillow.github.io//JellyFlix@latest/img/Title%20Page-TV.jpg">
   </div>
 </div>
 <br>
