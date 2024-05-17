@@ -2761,3 +2761,7 @@ div:not(.paperList) .listItem {
   grid-area: header;
   width:100%;
 }
+
+.headerRight {
+  padding-right: 1vw;
+}
