@@ -2709,6 +2709,9 @@ div:not(.paperList) .listItem {
 }
 
 @media (max-width: 100em) {
+  #moviesPage {
+    margin-top: 0;
+  }
   .sectionTabs {
     font-size: 83.5%;
   }
