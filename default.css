@@ -1733,25 +1733,6 @@ div#divRunningTasks {
   opacity: 1 !important;
 }
 
-#castContent {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
-  grid-row-gap: 0.5vw;
-  padding-bottom: 1vw;
-}
-
-#guestCastContent {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
-  grid-row-gap: 0.5vw;
-}
-
-.similarContent {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
-  grid-row-gap: 0.5vw;
-}
-
 /* Actor Card */
 
 .card[data-type="Actor"] {
