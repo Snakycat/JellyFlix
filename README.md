@@ -1,4 +1,4 @@
-> # **Warning** : I adjust and tested only on desktop connected to version 10.9.1
+> # **Warning** : WIP style fixes for 10.9.2+ for web version and Samsung TV
 
 <div align="center">
 <h1>JellyFlix</h1>
@@ -14,7 +14,7 @@
 <h3>Auto Update: </h3>
 
 ```css
-@import url("https://donchillow.github.io/JellyFlix/default.css");
+@import url("https://da-mena.github.io/JellyFlix/default.css");
 ```
 
 <h3>Addons:</h3>
@@ -24,13 +24,13 @@
 - <h4>Backdrop Version:</h3>
 
 ```css
-@import url("https://donchillow.github.io/JellyFlix/addons/full-backdrop.css");
+@import url("https://da-mena.github.io/JellyFlix/addons/full-backdrop.css");
 ```
 
 - <h4>Card Version:</h3>
 
 ```css
-@import url("https://donchillow.github.io/JellyFlix/addons/cards.css");
+@import url("https://da-mena.github.io/JellyFlix/addons/cards.css");
 ```
 
 <br>
@@ -38,12 +38,12 @@
 Jellyfin-Blue:
 
 ```css
-@import url("https://donchillow.github.io/JellyFlix/addons/jf-blue.css");
+@import url("https://da-mena.github.io/JellyFlix/addons/jf-blue.css");
 ```
 Jellyfin-Purple:
 
 ```css
-@import url("https://donchillow.github.io/JellyFlix/addons/jf-purple.css");
+@import url("https://da-mena.github.io/JellyFlix/addons/jf-purple.css");
 ```
 
 
@@ -51,24 +51,24 @@ Jellyfin-Purple:
 <div class="imagesCont">
   <div class="Login">
     <h3 align="center">Login</h3>
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Login.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/da-mena/JellyFlix@latest/img/Login.jpg">
   </div>
   <div class="home">
     <h3 align="center">Home Page</h3>
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Home.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/da-mena/JellyFlix@latest/img/Home.jpg">
   </div>  
   <div class="lib">
     <h3 align="center">Library</h3>
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Movies.jpg">
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/TV%20Shows.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/da-mena/JellyFlix@latest/img/Movies.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/da-mena/JellyFlix@latest/img/TV%20Shows.jpg">
   </div>
   <div class="titleMov">
     <h3 align="center">Movie Title Page</h3>
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Title%20Page-Movie.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/da-mena/JellyFlix@latest/img/Title%20Page-Movie.jpg">
   </div>
   <div class="titleTv">
     <h3 align="center">TV Show Title page</h3>
-    <img src="https://cdn.jsdelivr.net/gh/DonChillow/JellyFlix@latest/img/Title%20Page-TV.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/da-mena/JellyFlix@latest/img/Title%20Page-TV.jpg">
   </div>
 </div>
 <br>

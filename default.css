@@ -209,7 +209,7 @@ div#itemBackdrop::after {
 
 .detailPageSecondaryContainer {
   margin: 0em !important;
-  background: transparent;
+  background: transparent !important;
 }
 
 div#itemDetailPage {
@@ -939,7 +939,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .emby-textarea,
 .emby-select {
   box-shadow: none !important;
-  background: #101010 !important;
+  /*background: #101010 !important;*/
   text-shadow: none !important;
   border: 2.5px solid #101010 !important;
   padding: calc(1em - 2.5px) !important;
