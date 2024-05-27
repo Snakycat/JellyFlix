@@ -2749,10 +2749,10 @@ div:not(.paperList) .listItem {
 TODO: fade edges during scroll
 */
 .headerTabs.sectionTabs {
+  grid-area: header;
   justify-self: center;
   margin-top: 0;
   width: auto;
-  overflow: auto;
   -webkit-text-size-adjust: 1em;
   -moz-text-size-adjust: 1em;
   -ms-text-size-adjust: 1em;
