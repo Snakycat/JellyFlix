@@ -2778,6 +2778,7 @@ div:not(.paperList) .listItem {
 @media (min-width: 1125px) {
   .headerTabs.sectionTabs {
     width: auto;
+    padding-right: 6%;
     -webkit-text-size-adjust: 1.1em;
     -moz-text-size-adjust: 1.1em;
     -ms-text-size-adjust: 1.1em;
