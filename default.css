@@ -2745,12 +2745,14 @@ div:not(.paperList) .listItem {
   display: none;
 }
 
+/*
+TODO: fade edges during scroll
+*/
 .headerTabs.sectionTabs {
   justify-self: center;
-  grid-area: header;
   margin-top: 0;
   width: auto;
-  overflow: hidden;
+  overflow: auto;
   -webkit-text-size-adjust: 1em;
   -moz-text-size-adjust: 1em;
   -ms-text-size-adjust: 1em;
@@ -2783,13 +2785,22 @@ div:not(.paperList) .listItem {
 }
 
 .layout-tv .headerTabs.sectionTabs {
-  width: 65vw;
+  width: 68vw;
   padding-right: 20%;
   -webkit-text-size-adjust: 0.8em;
   -moz-text-size-adjust: 0.8em;
   -ms-text-size-adjust: 0.8em;
   text-size-adjust: 0.8em;
   font-size: 0.8em;
+}
+
+.layout-tv .noHomeButtonHeader .headerTabs.sectionTabs {
+  padding-right: 0;
+  -webkit-text-size-adjust: 0.9em;
+  -moz-text-size-adjust: 0.9em;
+  -ms-text-size-adjust: 0.9em;
+  text-size-adjust: 0.9em;
+  font-size: 0.9em;
 }
 
 .headerTop {
