@@ -2749,11 +2749,13 @@ div:not(.paperList) .listItem {
   justify-self: center;
   grid-area: header;
   margin-top: 0;
-  -webkit-text-size-adjust: 0.9em;
-  -moz-text-size-adjust: 0.9em;
-  -ms-text-size-adjust: 0.9em;
-  text-size-adjust: 0.9em;
-  font-size: 0.9em;
+  width: auto;
+  overflow: hidden;
+  -webkit-text-size-adjust: 1em;
+  -moz-text-size-adjust: 1em;
+  -ms-text-size-adjust: 1em;
+  text-size-adjust: 1em;
+  font-size: 1em;
 }
 
 @media (max-width: 800px) {
@@ -2767,29 +2769,32 @@ div:not(.paperList) .listItem {
   .headerTabs.sectionTabs {
     width: 50vw;
     padding-right: 10%;
-    -webkit-text-size-adjust: 1em;
-    -moz-text-size-adjust: 1em;
-    -ms-text-size-adjust: 1em;
-    text-size-adjust: 1em;
-    font-size: 1em;
   }
 }
 
-@media (min-width: 1125px) {
-  .headerTabs.sectionTabs {
-    width: auto;
-    padding-right: 6%;
-    -webkit-text-size-adjust: 1.1em;
-    -moz-text-size-adjust: 1.1em;
-    -ms-text-size-adjust: 1.1em;
-    text-size-adjust: 1.1em;
-    font-size: 1.1em;
-  }
+.layout-mobile .headerTabs.sectionTabs {
+  width: 29vw;
+  padding-right: 28%;
+}
+
+.layout-mobile .noHomeButtonHeader .headerTabs.sectionTabs {
+  width: 40vw;
+  padding-right: 38%;
+}
+
+.layout-tv .headerTabs.sectionTabs {
+  width: 65vw;
+  padding-right: 20%;
+  -webkit-text-size-adjust: 0.8em;
+  -moz-text-size-adjust: 0.8em;
+  -ms-text-size-adjust: 0.8em;
+  text-size-adjust: 0.8em;
+  font-size: 0.8em;
 }
 
 .headerTop {
   grid-area: header;
-  width:100%;
+  /*width:100%;*/
 }
 
 .headerRight {
