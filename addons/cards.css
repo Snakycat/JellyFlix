@@ -1,0 +1,19 @@
+.infoWrapper {
+    padding-top: 1vw;
+}
+
+.detailLogo {
+    right: 7vw !important;
+}
+
+.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+    padding: 1vw 0 0 0 !important;
+}
+
+.detailPageWrapperContainer {
+    margin: 0 5vw 5vw 5vw;
+    background: rgba(0,0,0,0.4);
+    padding-left: 3vw;
+    padding-right: 1vw;
+    border-radius: 2vw;
+}

@@ -1,0 +1,36 @@
+#castCollapsible {
+    padding-left: 5vw;
+}
+
+#guestStarCollapsible {
+    padding-left: 5vw;
+}
+
+#similarCollapsible {
+    padding-left: 5vw;
+}
+
+[dir="ltr"] .detailPageContent,
+.detailPageContent {
+    padding-left: 0;
+}
+
+.detailPagePrimaryContent {
+    padding-left: 32.45vw;
+    padding-bottom: 1vw;
+    min-height: 470px;
+}
+
+#castCollapsible > .emby-scrollbuttons padded-right {
+    right: 0;
+}
+
+.layout-desktop .detailImageContainer .card {
+    top: -6vw;
+}
+
+@media (max-width: 100em) {
+    .sectionTabs {
+        font-size: 83.5%;
+    }
+}

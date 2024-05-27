@@ -159,6 +159,7 @@ span.material-icons.checkboxIcon.checkboxIcon-checked.check {
   border-radius: 0;
   box-shadow: none;
   padding: 0 0 25px 25px;
+  margin-right: -4px !important;
 }
 
 .cardIndicators {
@@ -170,6 +171,7 @@ span.material-icons.checkboxIcon.checkboxIcon-checked.check {
 .fullSyncIndicator,
 .playedIndicator {
   background: linear-gradient(-135deg, rgba(40, 40, 40) 50%, transparent 50%);
+  margin-right: -4px !important;
 }
 
 button.emby-tab-button.emby-button.emby-tab-button-active:hover {
@@ -202,7 +204,7 @@ div#itemBackdrop {
 }
 
 div#itemBackdrop::after {
-  display: none;
+  /*display: none;*/
 }
 
 .detailPageSecondaryContainer {
@@ -211,7 +213,7 @@ div#itemBackdrop::after {
 }
 
 div#itemDetailPage {
-  background: rgb(20, 20, 20);
+  background: transparent;
 }
 
 .detailPagePrimaryContent {
@@ -240,9 +242,9 @@ div#itemDetailPage {
   font-size: 6.5vw;
 }
 
-#itemDetailPage .detailVerticalSection:last-child {
-  margin-bottom: 10vh;
-}
+/*#itemDetailPage .detailVerticalSection:last-child {*/
+/*  margin-bottom: 10vh;*/
+/*}*/
 
 #itemDetailPage .itemExternalLinks {
   margin-top: 0 !important;
@@ -256,7 +258,6 @@ div#itemDetailPage {
 
 .itemName.parentNameLast {
   margin: 0;
-  font-size: calc(135% * 2);
 }
 
 .parentName a {
@@ -322,18 +323,7 @@ div#itemDetailPage {
 .layout-tv div#itemBackdrop {
   width: 100vw;
   height: 100vh !important;
-  background: linear-gradient(
-      to left,
-      transparent,
-      rgb(20 20 20 / 0.5),
-      rgb(20, 20, 20)
-    ),
-    linear-gradient(
-      to bottom,
-      transparent,
-      rgb(20 20 20 / 0.5),
-      rgb(20, 20, 20)
-    );
+  background: linear-gradient(to right, rgb(20,20,20) 30%, rgba(20, 20, 20, 0.8) 50%, rgba(20,20,20,0) 100%), linear-gradient(to top, rgb(20, 20, 20) , rgba(20,20,20,0));
   z-index: -1;
   mask-image: none !important;
   -webkit-mask-image: none !important;
@@ -1213,6 +1203,46 @@ label.selectLabel {
   display: none !important;
 }
 
+.layout-tv .card[data-type="Director"] {
+  padding: 10px;
+  position: relative;
+  height: 16em;
+}
+
+.layout-tv .card[data-type="Director"] .cardPadder {
+  display: none !important;
+}
+
+.layout-tv .card[data-type="GuestStar"] {
+  padding: 10px;
+  position: relative;
+  height: 16em;
+}
+
+.layout-tv .card[data-type="GuestStar"] .cardPadder {
+  display: none !important;
+}
+
+.layout-tv .card[data-type="Producer"] {
+  padding: 10px;
+  position: relative;
+  height: 16em;
+}
+
+.layout-tv .card[data-type="Producer"] .cardPadder {
+  display: none !important;
+}
+
+.layout-tv .card[data-type="Writer"] {
+  padding: 10px;
+  position: relative;
+  height: 16em;
+}
+
+.layout-tv .card[data-type="Writer"] .cardPadder {
+  display: none !important;
+}
+
 .layout-tv .emby-scroller {
   overflow: hidden !important;
 }
@@ -1367,6 +1397,131 @@ label.selectLabel {
   padding: 0 !important;
 }
 
+
+.layout-tv .card[data-type="Director"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+  width: calc(100% - 10px);
+  padding: 0 5px !important;
+}
+
+.layout-tv .card[data-type="Director"] .cardText-first {
+  bottom: 31.5px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Director"] .cardText-secondary {
+  bottom: 8px;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Director"] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: inherit;
+  padding-top: 0 !important;
+}
+
+.layout-tv .card[data-type="Director"] .cardBox {
+  padding: 0 !important;
+}
+
+
+.layout-tv .card[data-type="GuestStar"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+  width: calc(100% - 10px);
+  padding: 0 5px !important;
+}
+
+.layout-tv .card[data-type="GuestStar"] .cardText-first {
+  bottom: 31.5px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="GuestStar"] .cardText-secondary {
+  bottom: 8px;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="GuestStar"] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: inherit;
+  padding-top: 0 !important;
+}
+
+.layout-tv .card[data-type="GuestStar"] .cardBox {
+  padding: 0 !important;
+}
+
+
+.layout-tv .card[data-type="Producer"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+  width: calc(100% - 10px);
+  padding: 0 5px !important;
+}
+
+.layout-tv .card[data-type="Producer"] .cardText-first {
+  bottom: 31.5px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Producer"] .cardText-secondary {
+  bottom: 8px;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Producer"] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: inherit;
+  padding-top: 0 !important;
+}
+
+.layout-tv .card[data-type="Producer"] .cardBox {
+  padding: 0 !important;
+}
+
+
+.layout-tv .card[data-type="Witer"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+  width: calc(100% - 10px);
+  padding: 0 5px !important;
+}
+
+.layout-tv .card[data-type="Witer"] .cardText-first {
+  bottom: 31.5px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Witer"] .cardText-secondary {
+  bottom: 8px;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Witer"] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: inherit;
+  padding-top: 0 !important;
+}
+
+.layout-tv .card[data-type="Witer"] .cardBox {
+  padding: 0 !important;
+}
+
+
 .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
   padding: 0 !important;
   margin: 0 3.3% !important;
@@ -1507,7 +1662,14 @@ div#divRunningTasks {
 }
 
 .detailLogo {
-  display: none;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16vh;
+  position: absolute;
+  right: 4vw;
+  top: 30vh;
+  width: 25vw;
 }
 
 .layout-mobile .detailPageContent {
@@ -1534,12 +1696,9 @@ div#divRunningTasks {
 .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
   position: relative;
   top: 0;
-  width: -webkit-fit-content !important;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
+  width: 100%;
   background: transparent;
   font-size: 20px;
-  max-width: 95%;
   margin-top: 10vh;
   padding: 0 !important;
   height: 20vh;
@@ -1569,6 +1728,12 @@ div#divRunningTasks {
 .card.chapterCard {
   transform: none !important;
 }
+
+.cardDefaultText {
+  opacity: 1 !important;
+}
+
+/* Actor Card */
 
 .card[data-type="Actor"] {
   transform: none !important;
@@ -1614,14 +1779,6 @@ div#divRunningTasks {
   height: 22px;
 }
 
-.cardDefaultText {
-  opacity: 1 !important;
-}
-
-.layout-mobile .card[data-type="Actor"] .cardText-first {
-  color: white !important;
-}
-
 .card[data-type="Actor"] .cardOverlayButton-br {
   position: absolute;
   bottom: 23% !important;
@@ -1637,6 +1794,241 @@ div#divRunningTasks {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.layout-mobile .card[data-type="Actor"] .cardText-first {
+  color: white !important;
+}
+
+/* Director Card */
+
+.card[data-type="Director"] {
+  transform: none !important;
+  /* grid-row-start: 1; */
+}
+.card[data-type="Director"] .cardBox {
+  background: none;
+  position: relative;
+}
+.card[data-type="Director"] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: var(--rounding);
+}
+.card[data-type="Director"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+}
+.card[data-type="Director"] .cardImageContainer::after {
+  content: "";
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.75), transparent 70%);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-top: 100%;
+}
+.card[data-type="Director"] .cardText-secondary {
+  bottom: 0%;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+.card[data-type="Director"] .cardText-first {
+  bottom: 23.5px;
+  width: -webkit-fill-available;
+  height: 22px;
+}
+.card[data-type="Director"] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23% !important;
+  right: 0 !important;
+}
+.card[data-type="Director"] .cardPadder {
+  background: none;
+}
+.card[data-type="Director"] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.layout-mobile .card[data-type="Director"] .cardText-first {
+  color: white !important;
+}
+
+/* GuestStar Card */
+
+.card[data-type="GuestStar"] {
+  transform: none !important;
+}
+.card[data-type="GuestStar"] .cardBox {
+  background: none;
+  position: relative;
+}
+.card[data-type="GuestStar"] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: var(--rounding);
+}
+.card[data-type="GuestStar"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+}
+.card[data-type="GuestStar"] .cardImageContainer::after {
+  content: "";
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.75), transparent 70%);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-top: 100%;
+}
+.card[data-type="GuestStar"] .cardText-secondary {
+  bottom: 0%;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+.card[data-type="GuestStar"] .cardText-first {
+  bottom: 23.5px;
+  width: -webkit-fill-available;
+  height: 22px;
+}
+.card[data-type="GuestStar"] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23% !important;
+  right: 0 !important;
+}
+.card[data-type="GuestStar"] .cardPadder {
+  background: none;
+}
+.card[data-type="GuestStar"] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.layout-mobile .card[data-type="GuestStar"] .cardText-first {
+  color: white !important;
+}
+
+/* Producer Card */
+
+.card[data-type="Producer"] {
+  transform: none !important;
+  /* grid-row-start: 1; */
+}
+.card[data-type="Producer"] .cardBox {
+  background: none;
+  position: relative;
+}
+.card[data-type="Producer"] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: var(--rounding);
+}
+.card[data-type="Producer"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+}
+.card[data-type="Producer"] .cardImageContainer::after {
+  content: "";
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.75), transparent 70%);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-top: 100%;
+}
+.card[data-type="Producer"] .cardText-secondary {
+  bottom: 0%;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+.card[data-type="Producer"] .cardText-first {
+  bottom: 23.5px;
+  width: -webkit-fill-available;
+  height: 22px;
+}
+.card[data-type="Producer"] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23% !important;
+  right: 0 !important;
+}
+.card[data-type="Producer"] .cardPadder {
+  background: none;
+}
+.card[data-type="Producer"] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.layout-mobile .card[data-type="Producer"] .cardText-first {
+  color: white !important;
+}
+
+/* Writer Card */
+
+.card[data-type="Writer"] {
+  transform: none !important;
+  /* grid-row-start: 1; */
+}
+.card[data-type="Writer"] .cardBox {
+  background: none;
+  position: relative;
+}
+.card[data-type="Writer"] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: var(--rounding);
+}
+.card[data-type="Writer"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+}
+.card[data-type="Writer"] .cardImageContainer::after {
+  content: "";
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.75), transparent 70%);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-top: 100%;
+}
+.card[data-type="Writer"] .cardText-secondary {
+  bottom: 0%;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+.card[data-type="Writer"] .cardText-first {
+  bottom: 23.5px;
+  width: -webkit-fill-available;
+  height: 22px;
+}
+.card[data-type="Writer"] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23% !important;
+  right: 0 !important;
+}
+.card[data-type="Writer"] .cardPadder {
+  background: none;
+}
+.card[data-type="Writer"] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.layout-mobile .card[data-type="Writer"] .cardText-first {
+  color: white !important;
 }
 
 select {
@@ -1730,17 +2122,23 @@ h2 {
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 
 .backdropContainer {
-  display: none !important;
+  /*display: none !important;*/
 }
+
 
 .backgroundContainer.withBackdrop {
   opacity: 1;
   z-index: -1;
-  background-color: rgb(20, 20, 20);
+  background: linear-gradient(to right, rgb(20,20,20) 30%, rgba(20, 20, 20, 0.8) 50%, rgba(20,20,20,0) 100%), linear-gradient(to top, rgb(20,20,20), rgba(20, 20, 20, 0));
 }
 
 .backgroundContainer {
-  background-color: rgb(20, 20, 20) !important;
+  background: linear-gradient(to right, rgb(20,20,20) 30%, rgba(20, 20, 20, 0.8) 50%, rgba(20,20,20,0) 100%), linear-gradient(to top, rgb(20,20,20), rgba(20, 20, 20, 0));
+  backdrop-filter: none;
+}
+
+#homeTab {
+  background: rgb(20,20,20);
 }
 
 /*Rounded corners and square hover buttons*/
@@ -1775,9 +2173,9 @@ h2 {
 
 .skinHeader {
   background: linear-gradient(
-    to bottom,
-    rgb(5, 5, 5),
-    rgb(20, 20, 20)
+          to bottom,
+          rgb(5, 5, 5),
+          rgb(20, 20, 20)
   ) !important;
 }
 
@@ -1832,7 +2230,7 @@ body:not(.withSectionTabs) > .skinHeader {
 .mainDrawer,
 .mainDrawer.drawer-open {
   box-shadow: none !important;
-  background: transparent;
+  background: rgb(20,20, 20);
 }
 
 .navMenuOption {
@@ -1895,6 +2293,12 @@ body:not(.withSectionTabs) > .skinHeader {
 
 /*Episode cards*/
 
+.listItem[data-type=Audio] {
+  transform: none !important;
+  grid-column: span 5;
+  margin-right: 1vw;
+}
+
 .listItem[data-type="Audio"] .mediaInfoItem::after {
   display: none !important;
 }
@@ -1914,6 +2318,11 @@ body:not(.withSectionTabs) > .skinHeader {
   -webkit-box-orient: horizontal;
   margin: -6px;
   width: 100%;
+}
+
+/* Fix for Multi-CD AUdio cause of display-grid of parent */
+#itemDetailPage .vertical-list > div:not(.listItem) {
+  grid-column: span 5;
 }
 
 #itemDetailPage .emby-select {
@@ -2276,8 +2685,83 @@ div:not(.paperList) .listItem {
 /* Spinner */
 
 .mdl-spinner__layer.mdl-spinner__layer-1.mdl-spinner__layer-1-active,
-.mdl-spinner__layer.mdl-spinner__layer-2.mdl-spinner__layer-2-active, 
-.mdl-spinner__layer.mdl-spinner__layer-3.mdl-spinner__layer-3-active, 
+.mdl-spinner__layer.mdl-spinner__layer-2.mdl-spinner__layer-2-active,
+.mdl-spinner__layer.mdl-spinner__layer-3.mdl-spinner__layer-3-active,
 .mdl-spinner__layer.mdl-spinner__layer-4.mdl-spinner__layer-4-active {
   border-color: var(--accent);
+}
+
+/* Fix Season Details Padding */
+[dir=ltr] .detailPageContent {
+  padding-left: 0px;
+}
+
+.mainDetailButtons {
+  margin: 1em 0em 1em 1em;
+}
+
+#similarCollapsible {
+  margin-bottom: 0;
+}
+
+.listItemMediaInfo {
+  margin-right: 1vw;
+}
+
+@media (max-width: 100em) {
+  #moviesPage {
+    margin-top: 0;
+  }
+  .sectionTabs {
+    font-size: 83.5%;
+  }
+}
+
+.cardFooter .cardText {
+  opacity: 0;
+}
+
+#suggestionsTab > .portraitCard, .squareCard {
+  width: calc(12.5% - 20px)
+}
+
+#suggestionsTab {
+  width: 94% !important;
+}
+#favoritesTab {
+  width: 94% !important;
+}
+#collectionsTab {
+  width: 94% !important;
+}
+#genresTab {
+  width: 94% !important;
+}
+
+.libraryPage:not(.noSecondaryNavPage) {
+  padding-top: 4.4em !important;
+}
+
+.pageWithAbsoluteTabs:not(.noSecondaryNavPage) {
+  padding-top: 4.4em !important;
+}
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+  display: grid;
+  grid-template-areas: "header";
+}
+
+.headerTabs.sectionTabs {
+  justify-self: center;
+  grid-area: header;
+  width: auto;
+  margin-top: 0;
+}
+.headerTop {
+  grid-area: header;
+  width:100%;
+}
+
+.headerRight {
+  padding-right: 1vw;
 }

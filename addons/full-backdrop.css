@@ -1,0 +1,19 @@
+.backgroundContainer.withBackdrop {
+    opacity: 1;
+    z-index: -1;
+    background: rgba(20, 20, 20, 0.6);
+}
+
+.backgroundContainer {
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(2px);
+}
+
+#homeTab {
+    background: rgba(20, 20, 20, 0.3);
+    backdrop-filter: blur(7px);
+}
+
+.skinHeader {
+    background: linear-gradient(to bottom, rgb(5, 5, 5), rgba(20, 20, 20, 0.9)) !important;
+}
