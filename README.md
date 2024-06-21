@@ -17,33 +17,14 @@
 @import url("https://snakycat.github.io/JellyFlix/default.css");
 ```
 
-<h3>Addons:</h3>
-- Just add the imports you like after the default.css
-- If you add multiple addons, add them in the order they are in this readme
-
-- <h4>Backdrop Version:</h3>
-
-```css
-@import url("https://da-mena.github.io/JellyFlix/addons/full-backdrop.css");
-```
-
-- <h4>Card Version:</h3>
-
-```css
-@import url("https://da-mena.github.io/JellyFlix/addons/cards.css");
-```
-
 <br>
 <h3>You can also use Jellyfin colors instead of Netflix red </h3>
 Jellyfin-Blue:
 
-```css
-@import url("https://da-mena.github.io/JellyFlix/addons/jf-blue.css");
-```
-Jellyfin-Purple:
+Purple:
 
 ```css
-@import url("https://da-mena.github.io/JellyFlix/addons/jf-purple.css");
+@import url("https://snakycat.github.io/JellyFlix/addons/jf-purple.css");
 ```
 
 
