@@ -14,7 +14,7 @@
 <h3>Auto Update: </h3>
 
 ```css
-@import url("https://da-mena.github.io/JellyFlix/default.css");
+@import url("https://snakycat.github.io/JellyFlix/default.css");
 ```
 
 <h3>Addons:</h3>
