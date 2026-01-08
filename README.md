@@ -1,5 +1,5 @@
-> # **Warning** : WIP style fixes for 10.9.2+ for web version and Samsung TV
-
+> # **Warning** - Im not great at fixing things but im currently fixing any bugs i am expereincing on 10.10.3
+ 
 <div align="center">
 <h1>JellyFlix</h1>
 <h3>Looks, Feels and Smells like Netflix</h3>
