@@ -811,7 +811,7 @@ h4 {
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
 }
 
-/*Chrome, Edge Chromium & Saffari*/
+/*Chrome, Edge Chromium & Safari*/
 
 video::-webkit-media-text-track-display {
   font-family: "Netflix Sans", sans-serif !important;
@@ -2674,11 +2674,11 @@ div:not(.paperList) .listItem {
 
 /* Spinner */
 
-.mdl-spinner__layer.mdl-spinner__layer-1.mdl-spinner__layer-1-active,
-.mdl-spinner__layer.mdl-spinner__layer-2.mdl-spinner__layer-2-active,
-.mdl-spinner__layer.mdl-spinner__layer-3.mdl-spinner__layer-3-active,
-.mdl-spinner__layer.mdl-spinner__layer-4.mdl-spinner__layer-4-active {
-  border-color: var(--accent);
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+    border-color: var(--theme-primary-color, #E50914) !important;
 }
 
 /* Fix Season Details Padding */
@@ -2810,4 +2810,24 @@ TODO: fade edges during scroll
 
 .headerRight {
   padding-right: 1vw;
+}
+
+
+
+/* Firefox — stable player seekbar thumb */
+input[type="range"]::-moz-range-thumb {
+    appearance: none;
+    border: none;
+
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+
+    background-color: var(--theme-primary-color, #E50914);
+}
+
+/* Filled progress */
+input[type="range"]::-moz-range-progress {
+    height: 4px;
+    background-color: var(--theme-primary-color, #E50914);
 }
