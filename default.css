@@ -2831,3 +2831,19 @@ input[type="range"]::-moz-range-progress {
     height: 4px;
     background-color: var(--theme-primary-color, #E50914);
 }
+
+/* Make MUI dashboard/list buttons red) */
+.MuiListItemButton-root.Mui-selected,
+.MuiButtonBase-root.Mui-selected,
+.MuiListItemButton-root.Mui-selected.Mui-focusVisible,
+.MuiButtonBase-root.Mui-selected.Mui-focusVisible {
+  background-color: rgba(229, 9, 20, 0.85) !important; /* red @ 85% opacity */
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+/* hover is opaque */
+.MuiListItemButton-root.Mui-selected:hover,
+.MuiButtonBase-root.Mui-selected:hover {
+  background-color: rgba(229, 9, 20, 0.95) !important;
+}
