@@ -2832,6 +2832,33 @@ input[type="range"]::-moz-range-progress {
     background-color: var(--theme-primary-color, #E50914);
 }
 
+/* Keep container intact and circular */
+.skinHeader .paper-icon-button-light.headerUserButtonRound {
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  position: relative;
+  background-color: transparent !important; /* remove black square */
+  background-size: cover !important;        /* ensure avatar fills the circle */
+  background-position: center !important;   /* center the avatar */
+}
+
+/* Remove pseudo-elements that cause zoom-in */
+.skinHeader .paper-icon-button-light.headerUserButtonRound::before,
+.skinHeader .paper-icon-button-light.headerUserButtonRound::after,
+.skinHeader .paper-icon-button-light.headerUserButtonRound:hover::before,
+.skinHeader .paper-icon-button-light.headerUserButtonRound:hover::after,
+.skinHeader .paper-icon-button-light.headerUserButtonRound:focus::before,
+.skinHeader .paper-icon-button-light.headerUserButtonRound:focus::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* circular accent ring hover/focus */
+.skinHeader .paper-icon-button-light.headerUserButton :is(.skinHeader .paper-icon-button-light.headerUserButtonRound:hover,
+.skinHeader .paper-icon-button-light.headerUserButtonRound:focus-visible) {
+    box-shadow: 0 0 0 2px var(--accent) inset;
+}
+
 /* Make MUI dashboard/list buttons red) */
 .MuiListItemButton-root.Mui-selected,
 .MuiButtonBase-root.Mui-selected,
