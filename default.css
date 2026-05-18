@@ -447,7 +447,7 @@ div#itemDetailPage {
 }
 
 .layout-mobile #itemDetailPage .btnCancelSeriesTimer::after {
-  content: "Cancle Series";
+  content: "Cancel Series";
 }
 
 .layout-mobile #itemDetailPage .btnCancelTimer::after {
@@ -513,7 +513,7 @@ div#itemDetailPage {
   z-index: 1;
 }
 
-@media (max-width: 575px) and (min-width: 695px) {
+@media (max-width: 695px) and (min-width: 575px) {
   .layout-mobile .nameContainer {
     font-size: 1em;
   }
@@ -1272,7 +1272,7 @@ label.selectLabel {
 }
 
 .layout-tv .raised::after {
-  transition: transform 0.275s, visiblity 0s 0.275s;
+  transition: transform 0.275s, visibility 0s 0.275s;
 }
 
 .layout-tv .cardBox {
@@ -1491,7 +1491,7 @@ label.selectLabel {
 }
 
 
-.layout-tv .card[data-type="Witer"] .cardText {
+.layout-tv .card[data-type="Writer"] .cardText {
   position: absolute;
   background: transparent !important;
   opacity: 1;
@@ -1499,25 +1499,25 @@ label.selectLabel {
   padding: 0 5px !important;
 }
 
-.layout-tv .card[data-type="Witer"] .cardText-first {
+.layout-tv .card[data-type="Writer"] .cardText-first {
   bottom: 31.5px;
   height: 22px;
 }
 
-.layout-tv .card[data-type="Witer"] .cardText-secondary {
+.layout-tv .card[data-type="Writer"] .cardText-secondary {
   bottom: 8px;
   border-radius: 0px 0px 10px 10px;
   height: 22px;
 }
 
-.layout-tv .card[data-type="Witer"] .cardScalable {
+.layout-tv .card[data-type="Writer"] .cardScalable {
   overflow: hidden;
   border-radius: var(--rounding);
   height: inherit;
   padding-top: 0 !important;
 }
 
-.layout-tv .card[data-type="Witer"] .cardBox {
+.layout-tv .card[data-type="Writer"] .cardBox {
   padding: 0 !important;
 }
 
@@ -2265,7 +2265,7 @@ body:not(.withSectionTabs) > .skinHeader {
   transform: none !important;
 }
 
-.dailogContainer .cardText {
+.dialogContainer .cardText {
   opacity: 1 !important;
 }
 
