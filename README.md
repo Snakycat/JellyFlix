@@ -1,4 +1,6 @@
-> # **Warning** - Im not great at fixing things but im currently fixing any bugs i am expereincing on 10.10.3
+> # **Warning** - Im not great at fixing things but I am currently fixing this for my use case and fix bugs im experiencing on 10.10.3
+> 
+> # *Notice* - I can not guarrentee that I will update it past that version as from testing it seems enough of this is broken to the point it would be faster to start over for me than it would be to repair it.
  
 <div align="center">
 <h1>JellyFlix</h1>
