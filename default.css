@@ -169,9 +169,9 @@ span.material-icons.checkboxIcon.checkboxIcon-checked.check {
 
 .countIndicator,
 .fullSyncIndicator,
+.mediaSourceIndicator,
 .playedIndicator {
-  background: linear-gradient(-135deg, rgba(40, 40, 40) 50%, transparent 50%);
-  margin-right: -4px !important;
+    background: var(--accent);
 }
 
 button.emby-tab-button.emby-button.emby-tab-button-active:hover {
